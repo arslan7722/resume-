@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+#about {
+  margin-bottom: 15vh;
+}
+
+.all-array {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.title {
+  margin-top: 18vh;
+  position: relative;
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+
+.title::after {
+  content: "who i am";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  font-size: 20px;
+  width: 55%;
+  color: crimson;
+  padding: 0 5px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+
+.general-info {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.info-main {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.meImage {
+  width: 35vw;
+  height: 50vh;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 4vw;
+}
+
+.text-info {
+  width: 38%;
+}
+
+.title-hi {
+  margin: 0 !important;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.type-text-all .text {
+  position: relative;
+  color: crimson;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.type-text-all .text.first-text {
+  color: #000;
+}
+
+.text.sec-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border-left: 2px solid crimson;
+  animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+  40%, 60% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+.theme-me-about {
+  font-size: 1.1rem;
+  margin: 3vh 0 0 0 !important;
+}
+
+.anticon svg {
+  margin-right: 0.5vw;
+}
+
+.button-download {
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 25px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.button-download:hover {
+  background: none !important;
+  border-color: crimson;
+  color: crimson;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}

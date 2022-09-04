@@ -1,0 +1,45 @@
+.navbar {
+  background: crimson;
+  color: rgb(255, 255, 255);
+  height: 9%;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-items: center;
+  z-index: 99999;
+}
+
+.all-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.main-theme {
+  margin-left: 13vw;
+  font-size: 37px;
+  font-weight: 600;
+}
+
+.tag-naviagte {
+  display: block;
+  margin-right: 10vw;
+  justify-content: space-around;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  
+}
+
+.tag {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-tag {
+  font-weight: 500;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin-left: 25px;
+}
